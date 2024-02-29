@@ -11,7 +11,7 @@ class Cena03 extends Phaser.Scene {
         this.load.image('imagem', "/assets/nossos/" + this.playerImagem + ".png");
     }
     create(){
-        if(this.playerImagem == 'godoidrip'){
+        if(this.playerImagem == 'godoidrip' || this.playerImagem == 'godoidrippx'){
             if(this.playerNome == 'godoi' || this.playerNome == 'Godoi'){
                 this.add.image(240, 320, 'imagem').setScale(0.5);
             }else{
