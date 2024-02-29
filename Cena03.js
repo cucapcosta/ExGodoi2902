@@ -7,7 +7,7 @@ class Cena03 extends Phaser.Scene {
         this.playerImagem = data.playerImage;
     }
     preload(){
-        this.load.image('imagem', this.playerImagem);
+        this.load.image('imagem', "/assets/nossos/" + this.playerImagem);
     }
     create(){
         this.add.image(240, 320, 'imagem').setScale(2);
