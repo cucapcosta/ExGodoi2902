@@ -10,6 +10,6 @@ class Cena03 extends Phaser.Scene {
         this.load.image('imagem', this.playerImagem);
     }
     create(){
-        this.add.image(240, 320, 'imagem');
+        this.add.image(240, 320, 'imagem').setScale(2);
     }
 }
