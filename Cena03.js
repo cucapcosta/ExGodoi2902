@@ -4,12 +4,12 @@ class Cena03 extends Phaser.Scene {
     }
 
     init(data){
-        this.playerImage = data.playerImage;
+        this.playerImagem = data.playerImage;
     }
     preload(){
-        this.load.image('foto', this.playerImage);
+        this.load.image('imagem', this.playerImagem);
     }
     create(){
-        this.image = this.add.image(240, 340, this.playerImage);
+        this.add.image(240, 320, 'imagem');
     }
 }

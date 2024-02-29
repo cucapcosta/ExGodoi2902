@@ -11,7 +11,7 @@ class Cena02 extends Phaser.Scene {
         this.text = this.add.text(-100, 700, `Olá ${this.playerName}, bão?`, { fill: '#333' });
         document.getElementById('input2').style.display = 'block';
         document.getElementById('fileButton').addEventListener('click', () => {
-            const playerImage = document.getElementById('fileBox').value;
+            const playerImage = document.getElementById('linkBox').value;
             this.scene.start('Cena03', { playerImage: playerImage });
             // Oculta o overlay após iniciar
             document.getElementById('input2').style.display = 'none';
