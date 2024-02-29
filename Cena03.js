@@ -18,6 +18,11 @@ class Cena03 extends Phaser.Scene {
                 this.add.text(10, 320, 'Você não tem acesso a esse arquivo', { fill: '#333' });
             }
 
+        }else if(this.playerImagem="sallouti"){
+            if(this.playerNome == 'adm_inteli' || this.playerNome == 'sallouti'){
+                this.add.image(240, 320, 'imagem').setScale(0.5);
+                this.add.text(220, 400, 'Festa', { fill: '#333' });
+            }
         }else{
             this.add.image(240, 320, 'imagem');
         }
