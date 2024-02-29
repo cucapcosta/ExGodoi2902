@@ -21,7 +21,7 @@ class Cena03 extends Phaser.Scene {
         }else if(this.playerImagem="sallouti"){
             if(this.playerNome == 'adm_inteli' || this.playerNome == 'sallouti'){
                 this.add.image(240, 320, 'imagem').setScale(0.5);
-                this.add.text(220, 400, 'Festa', { fill: '#333' });
+                this.add.text(200, 500  , 'Festa', { fill: '#333' }).setScale(3);
             }
         }else{
             this.add.image(240, 320, 'imagem');
